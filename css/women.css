@@ -1,94 +1,298 @@
-#womanIcon {
+
+h1 {
+  font-family: 'Bungee', 'Arial Black', sans-serif;
+  border-style: solid;
+  border-width: thick;
+  border-color: #000;
+  background-color: #fff;
+  width: fit-content;
+  margin: 0 auto;
+  padding: .1em .5em;
   position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+}
+
+
+h2 {
+  font-family: 'Bungee', 'Arial Black', sans-serif;
+  font-size: 1.8em;
+  text-align: center;
+}
+h2:hover {
+color: #fff;
+}
+
+h3 {
+    font-family: 'Bungee', 'Arial Black', sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+p {
+  font-family: 'Poppins', 'Century Gothic', sans-serif;
+}
+
+ul {
+  font-family: 'Poppins', 'Century Gothic', sans-serif;
+}
+
+a:link { color: #F20074; }
+a:visited { color: #FF3953 }
+a:focus { color: #FF85B6; }
+a:hover { color: #FF85B6; }
+a:active { color: #FF85B6; }
+
+
+/* sliced body image IDs */
+
+#head {
+  text-align: center;
+  position: absolute;
+  top: 115px;
+  left: 0;
+  right: 18px;
+  margin: 0 auto;
+  z-index: 0;
+  width: inherit;
+}
+
+#chest {
+  position: absolute;
+  top: 235px;
   left: 0;
   right: 0;
   margin: 0 auto;
+  z-index: 0;
+  width: inherit;
 }
 
-#underrep {
-  text-align: center;
+
+#ribs {
   position: absolute;
-  top: 70px;
+  top: 320px;
   left: 0;
   right: 0;
+  margin: 0 auto;
+  z-index: 0;
+  width: inherit;
+}
+
+#stomach {
+  position: absolute;
+  top: 375px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 0;
+  width: inherit;
+}
+
+#bottom {
+  position: absolute;
+  top: 440px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 0;
+  width: inherit;
+}
+
+#legs {
+  position: absolute;
+  top: 505px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 0;
+  width: inherit;
+}
+
+/* category spans */
+
+#underrep {
+  position: absolute;
+  top: 102px;
+  left: 0;
+  right: 10px;
   margin: 0 auto;
   z-index: 10;
   width: inherit;
-  color: #000;
-}
-
-.womenInfo {
-  z-index: 50;
 }
 
 #radio {
-  text-align: center;
   position: absolute;
-  top: 190px;
+  top: 245px;
   left: 0;
-  right: 1%;
+  right: 50px;
   margin: 0 auto;
   z-index: 10;
-  width: inherit;
-}
-
-#radioInfo {
-  position: absolute;
-  top: 190px;
-  background: #FF797A;
+  width: 66px;
 }
 
 #tv {
-  text-align: center;
   position: absolute;
-  top: 255px;
+  top: 308px;
   left: 0;
-  right: 1%;
+  right: 10px;
   margin: 0 auto;
   z-index: 10;
   width: inherit;
-}
-
-#tvInfo {
-  position: absolute;
-  top: 190px;
-  background: #FF3953;
 }
 
 #film {
-  text-align: center;
   position: absolute;
-  top: 315px;
+  top: 368px;
   left: 0;
-  right: 1%;
+  right: 10px;
   margin: 0 auto;
   z-index: 10;
   width: inherit;
-}
-
-#filmInfo {
-  position: absolute;
-  top: 190px;
-  background: #F20074;
 }
 
 #gaming {
-  text-align: center;
   position: absolute;
-  top: 385px;
+  top: 430px;
   left: 0;
-  right: 1%;
+  right: 10px;
   margin: 0 auto;
   z-index: 10;
   width: inherit;
 }
 
+/* hidden/fadeIn divs */
+
+#radioInfo {
+  position: relative;;
+  top: 67px;
+  background-color: rgba(133, 127, 138, 0.8);
+  z-index: 50;
+  margin: 0 auto;
+  width: 700px;
+  padding: .5em 1em;
+  border-style: inset;
+  border-color: #545057;
+  border-width: thin;
+}
+
+#tvInfo {
+  position: relative;;
+  top: 67px;
+  background-color: rgba(133, 127, 138, 0.8);
+  z-index: 50;
+  margin: 0 auto;
+  width: 700px;
+  padding: .5em 1em;
+  border-style: inset;
+  border-color: #545057;
+  border-width: thin;
+}
+
+#filmInfo {
+  position: relative;;
+  top: 67px;
+  background-color: rgba(133, 127, 138, 0.8);
+  z-index: 50;
+  margin: 0 auto;
+  width: 700px;
+  padding: .5em 1em;
+  border-style: inset;
+  border-color: #545057;
+  border-width: thin;
+}
+
 #gamingInfo {
-  position: absolute;
-  top: 190px;
-  background: #FF6EA3;
+  position: relative;;
+  top: 67px;
+  background-color: rgba(133, 127, 138, 0.8);
+  z-index: 50;
+  margin: 0 auto;
+  width: 700px;
+  padding: .5em 1em;
+  border-style: inset;
+  border-color: #545057;
+  border-width: thin;
 }
 
 .womenInfo {
-  position: absolute;
+  height: 400px;
+  overflow-y: auto;
+}
+
+
+
+/* overview/explanation */
+
+#underrepInfo {
+  width: 700px;
+  margin: 0 auto;
+  padding: .3em .5em;
+  text-align: center;
+}
+
+
+/* exit button */
+
+.close {
+    float: right;
+    display: block;
+    z-index: 100;
+    padding:2px 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.close:hover {
+        float:right;
+        display:inline-block;
+        padding:2px 5px;
+        color: #fff;
+    }
+
+#radioIndustry {
+  float: left;
+  width: 300px;
+}
+#radioDirector {
+  float: left;
+  width: 300px;
+}
+
+#radioManager {
+  float: left;
+  width: 300px;
+}
+
+#tvExec {
+  width: 400px;
+  margin: 0 auto;
+}
+
+#filmLead {
+  float: left;
+  width: 300px;
+}
+
+#filmDirector {
+  float: left;
+  width: 300px;
+}
+
+#filmWriter {
+  float: left;
+  width: 300px;
+}
+
+#extra {
+  float: left;
+}
+
+#gamingGamer {
+  float: left;
+  width: 300px;
+}
+
+#gamingDeveloper {
+  float: left;
+  width: 300px;
 }

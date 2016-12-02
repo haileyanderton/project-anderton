@@ -9,3 +9,27 @@ Next, I researched the best way to make divs appear over an image, and found tha
 I am frustrated because I am not sure how to get the visible divs on the woman's body to eventually respond to a click/hover without looking weird. I attempted to section the image off in photoshop, but I originally wanted to figure out a way to make the actual div fit the border of the image. I don't know if this is something I can fix. I might end up creating a button on each of the sections, instead of making the whole div respond to hovering/clicking.
 
 Lastly, I looked back at some of my old work to see if I could figure out a way to create a popup div that appears when you click on a visible div. I successfully executed a hide/show function, looking back at my music-sampler assignment, but I am still working on a way to make a fadeIn effect apply to the correct specific divs on click. I want my page to look more modern and three-dimensional than it's currently looking, so that will definitely be a challenge. Also, I have to make sure it is responsive and include media queries. I am no where near finished, but I'm on my way!
+
+Week 2
+
+I did a TON this week. To make the absolutely positioned image of the woman easier to control, I cut the image into parts in Photoshop and put it into multiple divs and re-positioned them. Then I picked the font families and updated some styling because I wanted to reassure myself that my project was still a good idea and had the potential to actually look visually appealing.
+
+After I made it look a little prettier, I gained some confidence and began to figure out the Javascript and jQuery to make my hidden divs fadeIn on click. I actually mostly referenced the music-sampler assignment and logically thought through what needed to take place to hide, fadeIn, and then hide all of my divs again.
+
+Next, I changed the opacity of the background colors of the hidden divs using rgba colors to make them slightly transparent. I realized I needed to do something about the bold text layered on top of the background picture that was showing through and distracting from the content of the overlapping divs. So, I added a function to my hide/fadeIn switch statement that told all of the bold text categories to hide on click in addition to the fadeIn of the overlapping div.
+
+This brought up the next issue: I needed to close out the overlapping div, and I needed the bold category text to reappear when I did so. I definitely consulted Google on this one. Using bits of this tutorial
+
+https://codedump.io/share/PzocG65CMMb9/1/adding-close-button-in-div-to-close-the-box
+
+and this fiddle
+
+http://jsfiddle.net/xftr5/19/
+
+I figured out a way to make a clickable 'x' button in the top of my overlapping div. Then I added a statement/function in my javascript that told the overlapping div to close on click, while simultaneously making the bold categories reappear on the image of the woman.
+
+Additionally, I added a height and an overflow-y to the overlapping divs so I scroll bar would appear to hold all of the content. I also made the category text on top of the image of the woman change color on hover to alert the viewer to click.
+
+Next, I added all of my charts. Most of the statistics I'm using are very basic and don't require the complexity of HighCharts, so I decided to use Google Charts instead. I took time figuring out how to change some of the styling settings to change the colors and fonts of the charts, as well as the background color to transparent. Everything is FINALLY coming together and looking very similar to my original idea.
+
+For Week 3, I plan to edit and perfect all of the content, text and facts, as well as source everything correctly, as I know I have missed attributing some sources. I also want to check that I have styled everything correctly, and add things like full font stacks, etc. I definitely want to make the 'x' that appears in the corner of the overlapping divs fixed so it scrolls with the page so readers can exit at any time. Finally, I need to make the page responsive. I know that is going to be frustrating, so I saved the best for last. 
