@@ -19,6 +19,8 @@ h2 {
   font-family: 'Bungee', 'Arial Black', sans-serif;
   font-size: 1.8em;
   text-align: center;
+  cursor: pointer;
+
 }
 h2:hover {
 color: #fff;
@@ -240,6 +242,7 @@ a:active { color: #FF85B6; }
     z-index: 100;
     padding:2px 5px;
     font-family: 'Poppins', sans-serif;
+    cursor: pointer;
 }
 
 .close:hover {
