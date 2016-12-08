@@ -36,7 +36,7 @@ For Week 3, I plan to edit and perfect all of the content, text and facts, as we
 
 Week 3
 
-My first objective this week were to edit all of the content and facts to make sure everything made sense and was attributed to the correct source. I included multiple hyperlinks, making sure to be meticulous about citing the sources.
+My first objective this week was to edit all of the content and facts to make sure everything made sense and was attributed to the correct source. I included multiple hyperlinks, making sure to be meticulous about citing the sources.
 
 I then wanted to figure out a way to make the 'x' close button fixed to the container div so it would scroll as the viewer scrolled. Unfortunately, I found it very difficult to make this work because the concept of fixed inherently means that the element is fixed to the browser, not the div containing the element. So as an alternative option, I decided to keep the floated 'x' and make an addition to the jQuery that let the user click out of the overlaying div by simply clicking on anywhere but the div. I used this stack overflow response to make this possible
 
