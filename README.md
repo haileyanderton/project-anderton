@@ -52,4 +52,6 @@ Then, I had to figure out a way to make the Google Charts decrease in size at sm
 
 http://www.w3schools.com/css/css3_2dtransforms.asp
 
-After reading through the project, checking every hyperlink and validating everything, I am pleased with the final result and am proud of all that I have accomplished!
+Final Summary
+
+After reading through the project, checking every hyperlink and validating everything, I am pleased with the final result and am proud of all that I have accomplished! The overall design of my project is very similar to my original idea and how I wanted it to appear. The overlapping divs and making them behave properly was probably the biggest challenged I faced, followed by the addition of the Google Charts. Overall, I feel that I have improved in my HTML, CSS, JavaScript and jQuery skills immensely and that I am ready to progress to more advanced areas. The biggest realization I have had while making this project is that there is nothing better than the feeling you get the moment your code FINALLY WORKS!
