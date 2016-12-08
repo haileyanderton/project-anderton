@@ -43,7 +43,24 @@ $(document).ready(function() {
            break;
        }
 
+
+
+
      }); // end of function for clicking
+
+     $(document).mouseup(function (e)
+     {
+         var container = $(".womenInfo");
+
+         if (!container.is(e.target) // if the target of the click isn't the container...
+             && container.has(e.target).length === 0) // ... nor a descendant of the container
+         {
+           $('.category').show()
+             container.hide();
+         }
+
+     });
+
     document.getElementById('radioClose').onclick = function(){
       $('.category').show()
           $('#radioInfo').hide();

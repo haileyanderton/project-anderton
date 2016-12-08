@@ -1,6 +1,10 @@
+body {
+  width: 80%;
+  margin: 0 auto;
+}
 
 h1 {
-  font-family: 'Bungee', 'Arial Black', sans-serif;
+  font-family: 'Bungee', Impact, 'Arial Black', 'Arial Rounded MT Bold', sans-serif;
   border-style: solid;
   border-width: thick;
   border-color: #000;
@@ -16,7 +20,7 @@ h1 {
 
 
 h2 {
-  font-family: 'Bungee', 'Arial Black', sans-serif;
+  font-family: 'Bungee', Impact, 'Arial Black', 'Arial Rounded MT Bold', sans-serif;
   font-size: 1.8em;
   text-align: center;
   cursor: pointer;
@@ -27,17 +31,17 @@ color: #fff;
 }
 
 h3 {
-    font-family: 'Bungee', 'Arial Black', sans-serif;
+    font-family: 'Bungee', Impact, 'Arial Black', 'Arial Rounded MT Bold', sans-serif;
     font-size: 1.8em;
     text-align: center;
 }
 
 p {
-  font-family: 'Poppins', 'Century Gothic', sans-serif;
+  font-family: 'Poppins', 'Century Gothic', Verdana, Arial, sans-serif;
 }
 
 ul {
-  font-family: 'Poppins', 'Century Gothic', sans-serif;
+  font-family: 'Poppins', 'Century Gothic', Verdana, Arial, sans-serif;
 }
 
 a:link { color: #F20074; }
@@ -58,6 +62,7 @@ a:active { color: #FF85B6; }
   margin: 0 auto;
   z-index: 0;
   width: inherit;
+  max-width: 100%;
 }
 
 #chest {
@@ -68,6 +73,7 @@ a:active { color: #FF85B6; }
   margin: 0 auto;
   z-index: 0;
   width: inherit;
+  max-width: 100%;
 }
 
 
@@ -79,6 +85,7 @@ a:active { color: #FF85B6; }
   margin: 0 auto;
   z-index: 0;
   width: inherit;
+  max-width: 100%;
 }
 
 #stomach {
@@ -89,6 +96,7 @@ a:active { color: #FF85B6; }
   margin: 0 auto;
   z-index: 0;
   width: inherit;
+  max-width: 100%;
 }
 
 #bottom {
@@ -99,6 +107,7 @@ a:active { color: #FF85B6; }
   margin: 0 auto;
   z-index: 0;
   width: inherit;
+  max-width: 100%;
 }
 
 #legs {
@@ -109,6 +118,7 @@ a:active { color: #FF85B6; }
   margin: 0 auto;
   z-index: 0;
   width: inherit;
+  max-width: 100%;
 }
 
 /* category spans */
@@ -121,6 +131,7 @@ a:active { color: #FF85B6; }
   margin: 0 auto;
   z-index: 10;
   width: inherit;
+  text-align: center;
 }
 
 #radio {
@@ -166,12 +177,12 @@ a:active { color: #FF85B6; }
 /* hidden/fadeIn divs */
 
 #radioInfo {
-  position: relative;;
+  position: relative;
   top: 67px;
   background-color: rgba(133, 127, 138, 0.8);
   z-index: 50;
   margin: 0 auto;
-  width: 700px;
+  width: 90%;
   padding: .5em 1em;
   border-style: inset;
   border-color: #545057;
@@ -179,12 +190,12 @@ a:active { color: #FF85B6; }
 }
 
 #tvInfo {
-  position: relative;;
+  position: relative;
   top: 67px;
   background-color: rgba(133, 127, 138, 0.8);
   z-index: 50;
   margin: 0 auto;
-  width: 700px;
+  width: 90%;
   padding: .5em 1em;
   border-style: inset;
   border-color: #545057;
@@ -192,12 +203,12 @@ a:active { color: #FF85B6; }
 }
 
 #filmInfo {
-  position: relative;;
+  position: relative;
   top: 67px;
   background-color: rgba(133, 127, 138, 0.8);
   z-index: 50;
   margin: 0 auto;
-  width: 700px;
+  width: 90%;
   padding: .5em 1em;
   border-style: inset;
   border-color: #545057;
@@ -205,12 +216,12 @@ a:active { color: #FF85B6; }
 }
 
 #gamingInfo {
-  position: relative;;
+  position: relative;
   top: 67px;
   background-color: rgba(133, 127, 138, 0.8);
   z-index: 50;
   margin: 0 auto;
-  width: 700px;
+  width: 90%;
   padding: .5em 1em;
   border-style: inset;
   border-color: #545057;
@@ -227,7 +238,7 @@ a:active { color: #FF85B6; }
 /* overview/explanation */
 
 #underrepInfo {
-  width: 700px;
+  width: 90%;
   margin: 0 auto;
   padding: .3em .5em;
   text-align: center;
@@ -237,65 +248,67 @@ a:active { color: #FF85B6; }
 /* exit button */
 
 .close {
-    float: right;
-    display: block;
-    z-index: 100;
-    padding:2px 5px;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
+  float: right;
+  display: block;
+  z-index: 100;
+  padding: 2px 5px;
+  font-family: 'Poppins', 'Century Gothic', Verdana, Arial, sans-serif;
+  cursor: pointer;
 }
 
 .close:hover {
-        float:right;
-        display:inline-block;
-        padding:2px 5px;
-        color: #fff;
+    float:right;
+    display:inline-block;
+    padding:2px 5px;
+    color: #fff;
     }
 
-#radioIndustry {
-  float: left;
-  width: 300px;
-}
-#radioDirector {
-  float: left;
-  width: 300px;
+.graph {
+  width: 100%;
 }
 
-#radioManager {
-  float: left;
-  width: 300px;
+
+/* media queries */
+
+@media screen and (max-width: 950px) {
+  #underrepInfo {
+    font-size: .8em;
+  }
+  .womenInfo {
+    width: 100%;
+    font-size: .9em;
+  }
 }
 
-#tvExec {
-  width: 400px;
-  margin: 0 auto;
+@media screen and (max-width: 800px) {
+  #underrep {
+    font-size: .8em;
+  }
+
+  #underrepInfo {
+    font-size: .7em;
+  }
+
+  .womenInfo {
+    font-size: .5em;
+  }
+
+  .graph {
+   transform: scale(0.75, 0.8);
+  }
 }
 
-#filmLead {
-  float: left;
-  width: 300px;
-}
+@media screen and (max-width: 450px){
 
-#filmDirector {
-  float: left;
-  width: 300px;
-}
+  #underrep {
+    font-size: .7em;
+  }
 
-#filmWriter {
-  float: left;
-  width: 300px;
-}
+  #underrepInfo {
+    font-size: .5em;
+  }
 
-#extra {
-  float: left;
-}
-
-#gamingGamer {
-  float: left;
-  width: 300px;
-}
-
-#gamingDeveloper {
-  float: left;
-  width: 300px;
+  .graph {
+   transform: scale(0.5, 0.55);
+  }
 }

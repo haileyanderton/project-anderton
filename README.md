@@ -32,4 +32,24 @@ Additionally, I added a height and an overflow-y to the overlapping divs so I sc
 
 Next, I added all of my charts. Most of the statistics I'm using are very basic and don't require the complexity of HighCharts, so I decided to use Google Charts instead. I took time figuring out how to change some of the styling settings to change the colors and fonts of the charts, as well as the background color to transparent. Everything is FINALLY coming together and looking very similar to my original idea.
 
-For Week 3, I plan to edit and perfect all of the content, text and facts, as well as source everything correctly, as I know I have missed attributing some sources. I also want to check that I have styled everything correctly, and add things like full font stacks, etc. I definitely want to make the 'x' that appears in the corner of the overlapping divs fixed so it scrolls with the page so readers can exit at any time. Finally, I need to make the page responsive. I know that is going to be frustrating, so I saved the best for last. 
+For Week 3, I plan to edit and perfect all of the content, text and facts, as well as source everything correctly, as I know I have missed attributing some sources. I also want to check that I have styled everything correctly, and add things like full font stacks, etc. I definitely want to make the 'x' that appears in the corner of the overlapping divs fixed so it scrolls with the page so readers can exit at any time. Finally, I need to make the page responsive. I know that is going to be frustrating, so I saved the best for last.
+
+Week 3
+
+My first objective this week were to edit all of the content and facts to make sure everything made sense and was attributed to the correct source. I included multiple hyperlinks, making sure to be meticulous about citing the sources.
+
+I then wanted to figure out a way to make the 'x' close button fixed to the container div so it would scroll as the viewer scrolled. Unfortunately, I found it very difficult to make this work because the concept of fixed inherently means that the element is fixed to the browser, not the div containing the element. So as an alternative option, I decided to keep the floated 'x' and make an addition to the jQuery that let the user click out of the overlaying div by simply clicking on anywhere but the div. I used this stack overflow response to make this possible
+
+http://stackoverflow.com/a/7385673
+
+and added that the category text should also reappear. I thought this was a good alternative and made up for the fact that the x did not scroll with the div.
+
+The biggest challenge was making the page responsive. Throughout the whole process, I used www.responsinator.com to view what my site looked like from different devices. The first thing I did was make the body have a width of 80% to keep everything contained with plenty of space. Then I noticed when I reduced of the size of the window, the "Underrepresented" title became too big at smaller breakpoints. To fix this I made media queries that told the font to change sizes at certain breakpoints. I did the same thing for the description paragraph at the top of the page.
+
+The next problem was that the overlapping divs were collapsing at smaller breakpoints, so I changed all of the div widths to 90%, and added a decrease in the font size of those paragraphs at certain breakpoints.
+
+Then, I had to figure out a way to make the Google Charts decrease in size at smaller breakpoints. I researched and concluded that there was nothing I could do to the javascript to make this happen, so I found a simple CSS solution and used the zoom property to make the graphs scale down on smaller screens. When I was validating my HTML and CSS at the end, the validator said that zoom was not an acceptable property because it is only compatible with a few browsers, so I researched and found that the transform: scale() property was a better option, and decided to use that instead.
+
+http://www.w3schools.com/css/css3_2dtransforms.asp
+
+After reading through the project, checking every hyperlink and validating everything, I am pleased with the final result and am proud of all that I have accomplished!
